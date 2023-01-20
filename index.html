@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.2.min.js"></script>
+    <script src="index.js"></script>
+
+    <title>RandomPassword</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="form" action="">
+        <h2>Random String Generator</h2>
+        <div class="choice">
+          <div class="choiceLong"><p>String should be</p></div>
+          <div class="choiceInput">
+            <input class="input" type="text" id="long" name="long" value="" />
+          </div>
+          <div lass="choiceLong"><p>characters long.</p></div>
+        </div>
+
+        <div class="paragraph">
+          <p>Which characters are allowed to occur in the string?</p>
+        </div>
+        <div class="audit1"></div>
+        <div class="choiceCharacters">
+          <input
+            class="choiceCharacters1"
+            tabindex="1"
+            type="checkbox"
+            name="choice1"
+          />
+          Numeric digits (0-9)
+        </div>
+        <div class="choiceCharacters">
+          <input
+            class="choiceCharacters2"
+            tabindex="2"
+            type="checkbox"
+            name="choice2"
+          />
+          Uppercase letters (A-Z)
+        </div>
+        <div class="choiceCharacters">
+          <input
+            class="choiceCharacters3"
+            tabindex="3"
+            type="checkbox"
+            name="choice3"
+          />
+          Lowercase letters (a-z)
+        </div>
+        <div class="audit2"></div>
+        <div class="btn">
+          <button class="button">Generate</button>
+        </div>
+        <hr />
+        <div class="result">
+          <div class="resultHeader"><h2>Result</h2></div>
+
+          <div class="wrapperResultParagraph">
+            <p class="resultParagraph"></p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
